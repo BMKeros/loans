@@ -9,7 +9,7 @@ class Loan(models.Model):
     def _get_default_date(self):
         return fields.Date.from_string(fields.Date.today())
 
-    code_loan = fields.Char(string="Loan Code")
+    code = fields.Char(string="Loan Code")
     description = fields.Char(string="Loan Description")
     amount = fields.Monetary(string="Loan Amount")
     application_date = fields.Date(string="Application Date")
